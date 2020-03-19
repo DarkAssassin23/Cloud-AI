@@ -15,7 +15,7 @@ Commands
 	
 	exit 			This command closes your connection to the server
 
-	hello there 	This command will give you a Star Wars prequals reference
+	hello there 		This command will give you a Star Wars prequals reference
 
 	how are you		This command will result in the AI telling you how they are
 	 				feeling at that moment. There are multiple feelings it can 
