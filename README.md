@@ -5,6 +5,12 @@ This is a semi-smart, cloud-based AI system designed to make your life easier.
 This contains both the client and the server scripts.
 
 --------------------
+
+Configuration
+------------
+Before you start the server or connect with a client, make sure you input the correct HOST for your server and/or client
+
+------------------------
 Commands
 -------
 	
@@ -26,16 +32,10 @@ Commands
 				your connection to the server
 
 	ipconfig		This commands will give you your local IP as well as your
-				global IP. NOTE: depending on the machine this is running on 
-				it may give back a local ip that is NOT your local network ip 
-				address. For information on how to fix this, see the Local IP
-				Configuration section 
+				global IP, if applicable
 
-	ipconfig		This commands will give you your local IP as well as your
-				global IP. NOTE: depending on the machine this is running on 
-				it may give back a local ip that is NOT your local network ip 
-				address. For information on how to fix this, see the Local IP
-				Configuration section  
+	ifconfig		This commands will give you your local IP as well as your
+				global IP. if applicable  
 	
 	time			This command will return the current time to the user in 
 				military time
@@ -71,24 +71,3 @@ Other Features
 	Enter your favorite websites (ending in .com, .edu, .gov, .net, or .org) and   the AI will open up a web browser with that website	
 	
 ---------
-Local IP Configuration
------
-Depending on the machine this is running on it may give back a local ip
-that is NOT your local network ip address. 
-
-For example, while testing this
-method on a Windows machine it would return a virtual ethernet adapter, in
-this case it was 168.254.170.7, while the actual local ip was 192.168.1.6.
-
-On one of the Linux computers this was tested on it returned the Loopback
-IP instead of the Local IP, however on a different linux computer it worked
-fine. 
-
-On the macOS computer it was tested on it also worked fine.
-
-However, to fix this problem on Windows, it is simply a problem with the binding 
-order of your network adapters; so, by changing the binding order of the network
-adapters this will fix the problem. On linux, the solution is simple, in your
-/etc/hosts/ file make sure your hostname is the local ip and not the loopback
-adapter
-	
